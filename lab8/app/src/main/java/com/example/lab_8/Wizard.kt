@@ -24,4 +24,12 @@ class Wizard(val name: String, var mana: Int, var spellPower: Int) {
     fun restoreMana(amount: Int) {
         mana = minOf(100, mana + amount)
     }
+
+    /** increases spell power by 1 if mana is greater than 5, then decreases mana by 5
+     * else if mana is less than 5 then nothing is done
+     * @return Unit
+     * */
+    fun train() {
+
+    }
 }
